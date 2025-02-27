@@ -1,0 +1,76 @@
+/* Projects Section */
+.projects-section {
+    padding: 100px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+}
+#projects{
+    scroll-margin-top: 75px;
+}
+.projects-container {
+    max-width: 1000px;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+}
+
+/* Heading */
+.projects-heading {
+    font-size: 4rem;
+    font-family: 'Playfair Display', serif;
+    color: #333;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* Code Container */
+.code-container {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+/* Button */
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.repo-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #333;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.repo-button:hover {
+    background-color: #555;
+    transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .projects-heading {
+        font-size: 3rem;
+    }
+
+    .repo-button {
+        width: 80%;
+        text-align: center;
+    }
+}
