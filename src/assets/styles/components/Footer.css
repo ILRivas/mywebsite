@@ -1,0 +1,49 @@
+.footer {
+    background-color: #222; /* Dark gray background */
+    color: #ffffff; /* White text color */
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer p {
+    color: #ffffff;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons a {
+    font-size: 32px; /* Bigger icons */
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Ensure icons are visible */
+.social-icons a.linkedin {
+    color: #0077B5; /* LinkedIn Blue */
+}
+
+.social-icons a.github {
+    color: #ffffff; /* GitHub White */
+}
+
+/* Hover effects */
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+.social-icons a.linkedin:hover {
+    color: #005582;
+}
+
+.social-icons a.github:hover {
+    color: #999; /* Slight fade effect */
+}

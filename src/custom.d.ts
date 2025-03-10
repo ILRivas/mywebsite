@@ -12,3 +12,4 @@ declare module 'react-input-mask';
 declare module 'react-google-recaptcha';
 declare module 'react-router-dom';
 declare module 'react-image-lightbox';
+declare module 'react-icons/fa';

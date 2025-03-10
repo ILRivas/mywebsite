@@ -9,6 +9,8 @@
     height: 100vh;
     text-align: center;
     padding: 20px;
+    background-color: white;
+    opacity: 0.9;
 }
 
 /* Stylish "Under Construction" header */
@@ -51,7 +53,7 @@
     padding: 12px 24px;
     font-size: 1.2rem;
     font-weight: bold;
-    background-color: #1a73e8;
+    background-color: #737578;
     color: white;
     border: none;
     border-radius: 8px;

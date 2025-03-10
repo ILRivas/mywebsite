@@ -123,26 +123,26 @@
     .experience-image {
         width: 100%;
         max-width: 300px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .exp-heading {
-        font-size: 2.5rem;
-        text-align: left; /* Maintain left alignment */
+        }
     }
 
-    .exp-projects h3 {
-        font-size: 1.5rem;
-        text-align: left;
-    }
+    @media screen and (max-width: 480px) {
+        .exp-heading {
+            font-size: 2.5rem;
+            text-align: left; /* Maintain left alignment */
+        }
 
-    .exp-projects li {
-        font-size: 1rem;
-        text-align: left;
-    }
+        .exp-projects h3 {
+            font-size: 1.5rem;
+            text-align: left;
+        }
 
-    .experience-image {
-        max-width: 250px;
+        .exp-projects li {
+            font-size: 1rem;
+            text-align: left;
+        }
+
+        .experience-image {
+            max-width: 250px;
+        }
     }
-}
