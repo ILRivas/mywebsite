@@ -3,8 +3,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import '../assets/styles/components/About.css';
-import profileImage1 from '../assets/images/NeedleBW.jpg';
-import profileImage2 from '../assets/images/Blue-Angels.jpg';
+import profileImage1 from '../assets/images/Me.jpg';
+import profileImage2 from '../assets/images/1409.jpg';
 
 const About: React.FC = () => {
     return (

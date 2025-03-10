@@ -10,3 +10,5 @@ declare module 'react-syntax-highlighter/dist/esm/styles/prism';
 declare module 'emailjs-com';
 declare module 'react-input-mask';
 declare module 'react-google-recaptcha';
+declare module 'react-router-dom';
+declare module 'react-image-lightbox';

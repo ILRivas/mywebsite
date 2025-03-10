@@ -1,0 +1,100 @@
+/* src/assets/styles/components/Photography.css */
+
+/* Main container styling */
+.photography-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Stylish "Under Construction" header */
+.construction-header {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Gradient underline effect */
+.construction-header::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right, #f39c12, #e74c3c);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+}
+
+/* Description text */
+.construction-text {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 15px;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+/* Return to Home button */
+.return-home {
+    margin-top: 30px;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Button hover effects */
+.return-home:hover {
+    background-color: #155ab6;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .construction-header {
+        font-size: 2.5rem;
+    }
+
+    .construction-text {
+        font-size: 1rem;
+        max-width: 90%;
+    }
+
+    .return-home {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .construction-header {
+        font-size: 2rem;
+    }
+
+    .construction-text {
+        font-size: 0.9rem;
+    }
+
+    .return-home {
+        font-size: 0.9rem;
+        padding: 8px 18px;
+    }
+}

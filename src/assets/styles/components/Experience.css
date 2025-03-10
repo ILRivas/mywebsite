@@ -1,3 +1,4 @@
+/* Experience Section */
 .experience-section {
     display: flex;
     flex-direction: row;
@@ -11,6 +12,8 @@
 
 #experience {
     scroll-margin-top: 100px;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .exp-content {
@@ -29,6 +32,7 @@
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 20px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Ensure text remains left-aligned */
 }
 
 /* Typography */
@@ -38,6 +42,7 @@
     margin-bottom: 20px;
     color: #111;
     line-height: 1.2;
+    text-align: left; /* Ensure headings remain left-aligned */
 }
 
 .exp-projects h3 {
@@ -46,12 +51,13 @@
     margin-top: 20px;
     margin-bottom: 10px;
     color: #333;
+    text-align: left;
 }
 
 .exp-projects ul {
     list-style: disc;
-    margin-left: 20px;
     margin-bottom: 20px;
+    padding-left: 20px; /* Keep bullet points properly aligned */
 }
 
 .exp-projects li {
@@ -59,8 +65,8 @@
     line-height: 1.8;
     margin-bottom: 10px;
     color: #444;
+    text-align: left;
 }
-
 
 /* Image Styling */
 .exp-images {
@@ -72,13 +78,13 @@
 }
 
 .experience-image {
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
     border-radius: 10px;
     object-fit: cover;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
 }
-
 
 /* Mobile Styles */
 @media (max-width: 768px) {
@@ -89,53 +95,54 @@
 
     .exp-content {
         flex-direction: column;
+        align-items: flex-start; /* Ensure left alignment remains */
     }
 
     .exp-text, .exp-images {
         max-width: 100%;
+        margin: 0 auto;
     }
-    .exp-images{
+
+    .exp-text {
+        text-align: left; /* Force left alignment */
+    }
+
+    .exp-images {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
+        justify-content: center;
     }
-    .experience-image:nth-child(3){
+
+    .experience-image:nth-child(3) {
         grid-column: span 2;
         justify-self: center;
         max-width: 250px;
     }
 
-    .exp-heading {
-        font-size: 3rem;
-    }
-
-    .exp-projects h3 {
-        font-size: 1.5rem;
-    }
-
-    .exp-projects li {
-        font-size: 1 rem;
-    }
-
     .experience-image {
-        width: 250px;
+        width: 100%;
+        max-width: 300px;
     }
 }
 
 @media screen and (max-width: 480px) {
     .exp-heading {
         font-size: 2.5rem;
+        text-align: left; /* Maintain left alignment */
     }
 
     .exp-projects h3 {
         font-size: 1.5rem;
+        text-align: left;
     }
 
     .exp-projects li {
         font-size: 1rem;
+        text-align: left;
     }
 
     .experience-image {
-        width: 200px;
+        max-width: 250px;
     }
 }

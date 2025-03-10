@@ -2,8 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import '../assets/styles/components/Experience.css';
 import profileImage1 from '../assets/images/NeedleBW.jpg';
-import profileImage2 from '../assets/images/Blue-Angels.jpg';
-import profileImage3 from '../assets/images/IRLogo.png';
+import profileImage2 from '../assets/images/20170122_144347.jpg';
+import profileImage3 from '../assets/images/Blue-Angels.jpg';
 
 const Experience: React.FC = () => {
     return (

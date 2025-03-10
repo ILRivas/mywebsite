@@ -5,29 +5,33 @@
     align-items: center;
     justify-content: center;
 }
-#about{
+
+#about {
     scroll-margin-top: 100px;
 }
+
 .about-container {
     max-width: 1200px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    gap: 40px;
+    gap: 60px; /* Ensuring consistent spacing */
     overflow: hidden;
     background-color: transparent;
     opacity: 0.8;
 }
 
+/* Text Content */
 .about-text {
     flex: 1;
     min-width: 300px;
     max-width: 600px;
-    padding: 20px;
+    padding: 30px;
     background-color: rgba(255, 255, 255, 0.8); 
     border-radius: 10px; 
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    text-align: left;
 }
 
 .about-heading {
@@ -37,62 +41,55 @@
     color: #333;
 }
 
-p {
+.about-text p {
     font-size: 1.2rem;
     line-height: 1.8;
     color: #555;
     margin-bottom: 20px;
 }
 
+/* Image Section */
 .about-images {
     flex: 1;
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 30px; /* Increased spacing for uniformity */
 }
 
 .about-image {
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     object-fit: cover;
 }
 
-.main-image {
-    z-index: 2;
-}
-
-.secondary-image {
-    margin-top: 20px;
-    z-index: 1;
-}
-
-/* Responsive Design */
+/* MOBILE RESPONSIVENESS */
 @media screen and (max-width: 768px) {
     .about-container {
         flex-direction: column;
-    }
-    
-    .about-images {
-        flex-direction: row;
         align-items: center;
+        gap: 40px; /* Keeps even spacing */
+    }
+
+    .about-text {
+        max-width: 90%;
+        text-align: left;
+        padding: 20px;
+    }
+
+    .about-images {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Images side by side */
+        gap: 15px;
         justify-content: center;
-        gap: 10px;
-    }
-
-    .about-heading {
-        font-size: 3rem;
-    }
-
-    p {
-        font-size: 1rem;
     }
 
     .about-image {
-        width: 250px;
+        width: 100%;
+        max-width: 250px;
     }
 }
 
@@ -101,11 +98,15 @@ p {
         font-size: 2.5rem;
     }
 
-    p {
-        font-size: 0.9rem;
+    .about-text p {
+        font-size: 1rem;
+    }
+
+    .about-images {
+        grid-template-columns: 1fr 1fr;
     }
 
     .about-image {
-        width: 200px;
+        max-width: 200px;
     }
 }

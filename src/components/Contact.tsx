@@ -11,10 +11,10 @@ const ContactForm: React.FC = () => {
 
         if (form.current) {
             emailjs.sendForm(
-                'service_k6otmnm',
-                'template_bgbyuc9',
+                process.env.REACT_APP_EMAILJS_SERVICE_ID!,
+                process.env.REACT_APP_EMAILJS_TEMPLATE_ID!,
                 form.current,
-                '1A5wr_Gxx5ZuB8m0J'
+                process.env.REACT_APP_EMAILJS_USER_ID!
             ).then(
                 (result: any) => {
                     console.log(result.text);

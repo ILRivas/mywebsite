@@ -1,5 +1,6 @@
 /* src/assets/styles/navbar.css */
 
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -7,10 +8,32 @@
     font-family: 'Playfair Display', serif;
 }
 
+/* Remove underline from active and visited links */
+.navbar-links a {
+    text-decoration: none;
+    color: black; /* Default text color */
+}
+
+
+
+/* Remove underline for all states */
+.navbar-links a:link,
+.navbar-links a:visited,
+.navbar-links a:hover,
+.navbar-links a:active {
+    text-decoration: none;
+    color: black; /* Keeps color consistent */
+}
+
+/* Hover effect (optional: subtle color change) */
+.navbar-links a:hover {
+    color: gray;
+}
+
 /* Navbar Styles */
 .navbar {
     width: 100%;
-    padding: 20px 40px;
+    padding: 15px 40px;
     background-color: white;
     position: fixed;
     top: 0;
@@ -19,6 +42,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Navbar Container */
 .navbar-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -29,40 +53,41 @@
 
 /* Navbar Logo */
 .navbar-logo {
-    display:flex;
-    align-items:center;
-    height: 80px;
-    padding-left:10px;
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: #333;
-    transition: color 0.3s;
-
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding-left: 10px;
 }
 
-.navbar-logo img{
+.navbar-logo img {
     height: 100%;
     width: auto;
-    max-height:50px;
+    max-height: 50px;
 }
 
-/* Desktop Navbar Links */
+/* Navbar Links */
 .navbar-links {
     list-style: none;
     display: flex;
-    gap: 30px;
+    gap: 20px;
 }
 
-.navbar-links li a {
-    color: #333;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s;
-    font-size: 1.5rem;
+/* Buttons & Links Styling */
+.navbar-links button, 
+.navbar-links .nav-link {
+    all: unset;  /* Reset all default button styles */
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: black;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
 }
 
-.navbar-links li a:hover {
-    color: #1a73e8;
+/* Hover Effect */
+.navbar-links button:hover, 
+.navbar-links .nav-link:hover {
+    color: gray; /* Slight color change instead of underline */
 }
 
 /* Hamburger Menu Button */
@@ -75,7 +100,6 @@
     background: none;
     border: none;
     outline: none;
-    
 }
 
 .menu-toggle .bar {
@@ -101,7 +125,6 @@
         transform: translateX(100%);
         transition: transform 0.3s ease;
         box-shadow: -4px 0 8px rgba(0, 0, 0, 0.1);
-
     }
 
     .navbar-links.open {
@@ -110,5 +133,12 @@
 
     .menu-toggle {
         display: flex;
+    }
+
+    /* Ensure buttons and links look the same on mobile */
+    .navbar-links button,
+    .navbar-links .nav-link {
+        font-size: 1.5rem;
+        padding: 10px 0;
     }
 }
