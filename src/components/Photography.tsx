@@ -94,6 +94,7 @@ const Photography: React.FC = () => {
                 src={src}
                 alt={`${activeCategory} Image ${index + 1}`}
                 className="gallery-image"
+                loading="lazy"
                 onClick={() => handleImageClick(index)}
               />
             ))}
